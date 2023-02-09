@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<head>
+    <title>Table with thead, tbody, tfoot, and caption</title>
+</head>
+<body>
+    <!-- HTML also provides the tables with the <thead>, <tbody>, <tfoot>, and <caption> elements. These additional
+    elements are useful for adding semantic value to your tables and for providing a place for separate CSS styling -->
+    <table border="1">
+            <caption>Table Title</caption> <!--| caption is the first child of table |-->
+            <thead> <!--| thead is after caption |-->
+            <tr>
+            <th>Name</th>
+            <th>Email</th>
+            </tr>
+            </thead>
+            <tbody> <!--| tbody is after thead |-->
+            <tr>
+            <td>Apurva</td>
+            <td>apurva@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Apurva</td>
+                <td>apurva@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Apurva</td>
+                    <td>apurva@gmail.com</td>
+                    </tr>
+            </tbody>
+            <tfoot>
+            <!--| tfoot can be placed before or after tbody, but not in a group of tbody. |--> 
+            <!--| Regardless where tfoot is in markup, it is rendered at the bottom. |-->  
+            <tr>
+            <td>Footer1</td>
+            <td>Footer2</td>
+            </tr>
+            </tfoot>
+            </table>
+</body>
+</html>

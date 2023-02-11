@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Attribute Events</title>
+    </head>
+<body>
+
+<h2>The onkeypress Event</h2>
+
+<p>A function is triggered when the user is pressing a key in the input field.</p>
+
+<input type="text" onkeydown="myFunction1()">
+
+<script>
+function myFunction1() {
+  alert("You pressed a key inside the input field");
+}
+</script>
+
+  <h2>The onkeydown Event</h2>
+  <p>Press a key in the input field:</p>
+  <input type="text" onkeydown="myFunction2()">
+  <p id="demo"></p>
+  <script>
+  function myFunction2() {
+  document.getElementById("demo").innerHTML = "You pressed a key inside the    input field";
+    }
+    </script>
+    
+     <h2>The keyup Event</h2>
+     <p>The function transforms the input field to upper case:</p>
+
+    Enter your name: <input type="text" id="fname" onkeyup="myFunction3()">
+
+    <script>
+    function myFunction3() {
+    let x = document.getElementById("fname");
+    x.value = x.value.toUpperCase();
+    }
+    </script>
+
+</body>
+</html>

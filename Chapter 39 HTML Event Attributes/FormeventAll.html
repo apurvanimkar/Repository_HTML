@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form attribute</title>
+    </head>
+<body onafterprint="myFunction1()">
+
+<h1>Try to print this document</h1>
+<p><b>Tip:</b> Keyboard shortcuts, such as Ctrl+P sets the page to print.</p>
+<hr>
+<script>
+function myFunction1() {
+  alert("This document is now being printed");
+}
+</script>
+
+<body onbeforeprint="myFunction2()">
+
+<h1>Try to print this document</h1>
+<p><b>Tip:</b> Keyboard shortcuts, such as Ctrl+P sets the page to print.</p>
+
+<script>
+function myFunction2() {
+  alert("You are about to print this document!");
+}
+</script>
+
+<script>
+function myFunction3() {
+  alert("Page is loaded");
+}
+</script>
+</head>
+
+<body onload="myFunction3()">
+<h1>Hello World!</h1>
+</body>
+
+
+<body onbeforeunload="return myFunction4()">
+
+<p>Close this window, press F5 or click on the link below to invoke the onbeforeunload event.</p>
+
+<a href="https://google.com">Click here to go to google.com</a>
+  
+<script>
+function myFunction4() {
+  return "Write something clever here...";
+}
+</script>
+
+<body onbeforeunload="return myFunction5()">
+
+<p>Close this window, press F5 or click on the link below to invoke the onbeforeunload event.</p>
+
+<a href="https://google.com">Click here to go to google.com</a>
+  
+<script>
+function myFunction5() {
+  return "Write something clever here...";
+}
+</script>
+
+
+<img src="card.jpg" onerror="myFunction6()">
+
+<p>A function is triggered if an error occurs when loading the image.</p>
+
+<script>
+function myFunction6() {
+  alert("The image could not be loaded.");
+}
+</body>
+</html>

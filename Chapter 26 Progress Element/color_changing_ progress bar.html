@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+       Changing the color of a progress bar
+    </title>
+    <style>
+      
+        /* For Firefox */
+        progress::-moz-progress-bar {
+            background: green;
+        }
+  
+        /* For Chrome or Safari */
+        progress::-webkit-progress-value {
+            background: yellow;
+        }
+  
+        /* For IE10 */
+        progress {
+            background: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color:red;">
+        Changing color of progress bar
+    </h1>
+  
+    <h4>
+        Set Background Color of Progress
+        Bar using HTML and CSS
+    </h4>
+  
+    <progress value="40" max="100"></progress>
+</body>
+  
+</html>
